@@ -1,7 +1,6 @@
 ﻿using ECommerceShipping.Model;
 using System;
 using System.Collections.Generic;
-using System.Collections.ObjectModel;
 using System.ComponentModel;
 using System.Runtime.CompilerServices;
 
@@ -34,12 +33,10 @@ namespace ECommerceShipping.ViewModel
         private void LoadProducts(List<Product> products)
         {
             Products = new List<ProductViewModel>();
-
             foreach (Product product in products)
             {
                 Products.Add(new ProductViewModel(product));
             }
-
             OrderDate = DateTime.Today;
         }
 
@@ -58,7 +55,6 @@ namespace ECommerceShipping.ViewModel
                 {
                     productVM.CalculateShipDate(OrderDate);
                 }
-                
             }
         }
     }

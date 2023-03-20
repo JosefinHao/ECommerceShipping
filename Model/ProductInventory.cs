@@ -1,9 +1,5 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using System.IO;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using Newtonsoft.Json;
 
 namespace ECommerceShipping.Model
@@ -15,10 +11,10 @@ namespace ECommerceShipping.Model
         public ProductInventory()
         {
             Products = new List<Product>();
-            AddProducts();
+            LoadProductInventory();
         }
 
-        private void AddProducts()
+        private void LoadProductInventory()
         {
             string json = File.ReadAllText("products.json");
             List<Product> products = JsonConvert.DeserializeObject<List<Product>>(json);

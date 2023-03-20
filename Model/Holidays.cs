@@ -1,8 +1,5 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace ECommerceShipping.Model
 {
@@ -10,7 +7,7 @@ namespace ECommerceShipping.Model
     {
         private static readonly Dictionary<string, List<DateTime>> holidays = new Dictionary<string, List<DateTime>>
         {
-            ["US"] = new List<DateTime>
+            ["USA"] = new List<DateTime>
             {
                 new DateTime(DateTime.Now.Year, 1, 1), // New Year's Day
                 new DateTime(DateTime.Now.Year, 7, 4), // Independence Day

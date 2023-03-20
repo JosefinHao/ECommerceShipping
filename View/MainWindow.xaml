@@ -3,11 +3,10 @@
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-        xmlns:local="clr-namespace:ECommerceShipping.View"
         xmlns:viewmodel="clr-namespace:ECommerceShipping.ViewModel" 
         d:DataContext="{d:DesignInstance Type=viewmodel:ProductInventoryViewModel}"
         mc:Ignorable="d"
-        Title="E-Commerce Shipping" Height="500" Width="800">
+        Title="E-Commerce Shipping" Height="500" Width="750">
     <Window.Resources>
         <viewmodel:ProductInventoryViewModel x:Key="ProductInventoryViewModel"/>
     </Window.Resources>

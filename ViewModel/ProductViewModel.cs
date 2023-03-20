@@ -1,11 +1,7 @@
 ﻿using ECommerceShipping.Model;
 using System;
-using System.Collections.Generic;
 using System.ComponentModel;
-using System.Linq;
 using System.Runtime.CompilerServices;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace ECommerceShipping.ViewModel
 {
@@ -51,8 +47,8 @@ namespace ECommerceShipping.ViewModel
 
         public void CalculateShipDate(DateTime orderDate)
         {
-            ShippingDateCalculator calculator = new ShippingDateCalculator();
-            ShipDate = calculator.CalculateShippingDate(orderDate, Product);
+            _ = new ShippingDateCalculator();
+            ShipDate = ShippingDateCalculator.CalculateShippingDate(orderDate, Product);
         }
     }
 
