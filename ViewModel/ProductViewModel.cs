@@ -12,7 +12,6 @@ namespace ECommerceShipping.ViewModel
     public class ProductViewModel : INotifyPropertyChanged
     {
         private Product _product;
-        private int _availableInventoryQuantity;
         private DateTime _shipDate;
 
         public Product Product
@@ -21,16 +20,6 @@ namespace ECommerceShipping.ViewModel
             set
             {
                 _product = value;
-                NotifyPropertyChanged();
-            }
-        }
-
-        public int AvailableInventoryQuantity
-        {
-            get { return _availableInventoryQuantity; }
-            set
-            {
-                _availableInventoryQuantity = value;
                 NotifyPropertyChanged();
             }
         }
